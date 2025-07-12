@@ -37,9 +37,17 @@ export const Header = () => {
             </Link>
           </Button>
           
-          <Button variant="ghost" size="sm">
-            <User className="h-4 w-4" />
-            Login
+          <Button variant="ghost" size="sm" asChild>
+            <Link to="/login">
+              <User className="h-4 w-4" />
+              Login
+            </Link>
+          </Button>
+
+          <Button variant="outline" size="sm" asChild>
+            <Link to="/register">
+              Sign Up
+            </Link>
           </Button>
         </div>
       </div>
